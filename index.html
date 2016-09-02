@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Juego de la vida</title>
+	<style type="text/css">
+		body{
+			background: #eee;
+		}
+		#juego{
+			border-radius: 3px;
+			background: url(img/gunship.jpg) center center no-repeat;
+			background-size: cover; 
+			box-shadow: 0 2px 5px rgba(0,0,0,.26);
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			margin-top: 3em;
+		}
+		.init{
+			margin-top: 1em;
+			background: #2196f3;
+			color: #fff;
+			border-radius: 3px;
+			box-shadow: 0 2px 5px rgba(0,0,0,.26);
+			display: inline-block;
+			padding: 1em;
+			font-size: 2em;
+			font-family: Helvetica;
+			text-align: center;
+			transition: box-shadow .8s, background .8s;
+		}
+		.init:hover{
+			box-shadow: 0 2px 8px rgba(0,0,0,.46);
+			background: #4caf50;
+		}
+		.container{
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+<canvas id="juego" width="500" height="500"></canvas>
+<div class="container">
+	<a class="btn init" id="init" onclick="iniciar();">Dar Vida!</a>
+</div>
+
+<script type="text/javascript" src="js/code.js"></script>
+<script type="text/javascript" src="js/game.js"></script>
+
+</body>
+</html>
